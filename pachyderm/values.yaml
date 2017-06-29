@@ -1,0 +1,45 @@
+# Default values for a Pachyderm Minio-based deployment.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+pachd:
+ secretName: pachsecret
+ replicaCount: 3
+ volumes:
+  volumeName: pachdvol
+  secVolName: pachsecret
+ resources:
+  requests:
+   cpu: 1
+   memory: 5G
+ image:
+  repository: pachyderm/pachd
+  tag: 1.4.8
+  pullPolicy: IfNotPresent
+ worker:
+  repository: pachyderm/worker
+  tag: 1.4.8
+
+etcd:
+ replicaCount: 1
+ volumes:
+  volumeName: etcdvol
+ volumeClaim: 
+  name: etcdclaim
+  storage: 50G
+  accessModes: ReadWriteMany
+ resources:
+  requests:
+   cpu: 1
+   memory: 4G
+ image:
+  repository: quay.io/coreos/etcd
+  tag: v3.1.4
+  pullPolicy: IfNotPresent
+
+minio:
+ releaseName: "default"
+ dom: ".default.svc.cluster.local:9000"
+ bucketName: mybucket
+ accessKey: "default"
+ secretKey: "default"
+ secure: "0"
