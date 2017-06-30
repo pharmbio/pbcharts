@@ -10,7 +10,7 @@ entries:
     maintainers:
     - email: Jon.Novella@farmbio.uu.se
       name: Jon Ander Novella
-    name: pachyderm
+    name: pbcharts/pachyderm
     sources:
     - https://github.com/pachyderm/pachyderm
     urls:
