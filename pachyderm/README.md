@@ -24,14 +24,14 @@ How to install the chart
 You must install the chart with the same release name, access key and secret key previously set in the Minio chart:
 
 ```console
-$ helm repo add pbcharts http://pharmb.io/pbcharts/pbcharts
+$ helm repo add pbcharts http://pharmb.io/pbcharts
 $ helm install --name pachyderm --set minio.releaseName=minio-release,minio.accessKey=myaccesskey,minio.secretKey=mysecretkey pbcharts/pachyderm
 ```
 
 Helm chart settings
 -------------------
 
-The following tables lists the configurable parameters of the patroni chart and their default values.
+The following tables lists the configurable parameters of the chart and their default values.
 
 | Parameter                | Description           | Default           |
 |--------------------------|-----------------------|-------------------|
