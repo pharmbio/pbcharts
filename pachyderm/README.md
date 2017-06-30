@@ -7,7 +7,6 @@ Prerequisites Details
 ---------------------
 
 -	Kubernetes
--	A dedicated namespace to install Pachyderm
 -   PV provisioner support in the underlying infrastructure
 -   Minio deployment on Kubernetes using Helm
 
@@ -22,14 +21,14 @@ This chart can do the following:
 How to install the chart
 --------------------
 
-You must install the chart with the release name previously assigned to the Minio chart:
+You must install the chart with the same release name, access key and secret key previously set in the Minio chart:
 
 ```console
-$ helm repo add pbcharts --url http://pharmb.io/pbcharts/
-$ helm install --name pachyderm --set minio.releaseName=minio-release,accessKey= myaccesskey,secretKey=mysecretkey .
+$ helm repo add pbcharts http://pharmb.io/pbcharts/pbcharts
+$ helm install --name pachyderm --set minio.releaseName=minio-release,minio.accessKey=myaccesskey,minio.secretKey=mysecretkey pbcharts/pachyderm
 ```
 
-Heml chart settings
+Helm chart settings
 -------------------
 
 The following tables lists the configurable parameters of the patroni chart and their default values.
@@ -40,10 +39,11 @@ The following tables lists the configurable parameters of the patroni chart and 
 | `pachd.image.tag`        | Container image tag   | `1.4.8`           |
 | `pachd.worker.repository`| Worker image name     | `pachyderm/worker`|
 | `pachd.worker.tag`       | Worker image tag      | `1.4.8`           |
-| `pachd.image.pullPolicy` | Container pull policy | `IfNotPresent`    |
-| `pachd.replicaCount`     | k8s petset replicas   | `1`               |
-| `pachd.volume.volumeName`| Volume name           | `pachd_vol`       |
-| `pachd.resources       ` | Request memory/cpu    | `1 & 5G`          |
+| `pachd.replicaCount`     | Number of pachds      | `1`               |
+| `*.resources.memory`     | Memory request        | `5G`              |
+| `*.resources.cpu`        | CPU request           | `1`               |
+| `minio.accessKey`        | Minio access key      | `myaccesskey`     |
+| `minio.secretKey`        | Minio secret key      | `mysecretkey`     |
 
 
 Other parameters are also changeable. Please consult all available parameters in the `values.yaml` file.

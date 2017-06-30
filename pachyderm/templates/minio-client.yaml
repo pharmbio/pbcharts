@@ -26,9 +26,9 @@ spec:
           name: {{ .Values.minio.releaseName }}-minio-user
           key: secretkey
       - name: BUCKET_NAME
-        value: mybucket
+        value: {{ .Values.minio.bucketName }}
       - name: DOMAIN
-        value: {{ .Values.minio.releaseName }}.default.svc.cluster.local
+        value: {{ .Values.minio.releaseName }}-minio-svc.default.svc.cluster.local
      resources:
       limits:
        cpu: "1"

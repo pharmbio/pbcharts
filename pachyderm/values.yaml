@@ -2,11 +2,11 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 pachd:
- secretName: pachsecret
- replicaCount: 3
+ secretName: minio-secret
+ replicaCount: 1
  volumes:
   volumeName: pachdvol
-  secVolName: pachsecret
+  secVolName: minio-secret
  resources:
   requests:
    cpu: 1
@@ -14,7 +14,7 @@ pachd:
  image:
   repository: pachyderm/pachd
   tag: 1.4.8
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
  worker:
   repository: pachyderm/worker
   tag: 1.4.8
@@ -25,6 +25,7 @@ etcd:
   volumeName: etcdvol
  volumeClaim: 
   name: etcdclaim
+  # storageClass: <storageClass>
   storage: 50G
   accessModes: ReadWriteMany
  resources:
@@ -38,8 +39,8 @@ etcd:
 
 minio:
  releaseName: "default"
- dom: ".default.svc.cluster.local:9000"
+ dom: "-minio-svc.default.svc.cluster.local:9000"
  bucketName: mybucket
- accessKey: "default"
- secretKey: "default"
+ accessKey: myaccesskey
+ secretKey: mysecretkey
  secure: "0"

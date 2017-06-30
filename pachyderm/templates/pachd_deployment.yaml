@@ -71,7 +71,7 @@ spec:
         - name: '{{ .Values.pachd.volumes.volumeName }}'
           mountPath: "/pach"
         - name: '{{ .Values.pachd.volumes.secVolName }}'
-          mountPath: "/pachsecret"
+          mountPath: "/minio-secret"
         imagePullPolicy: {{ .Values.pachd.image.pullPolicy }}
         securityContext:
           privileged: true
