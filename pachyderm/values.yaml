@@ -48,6 +48,7 @@ minio:
 
 dash:
  host: dash.pachyderm
+ enabled: true
  image:
   tag: 0.3.28
   repository: pachyderm/dash

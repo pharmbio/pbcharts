@@ -35,10 +35,11 @@ The following tables lists the configurable parameters of the chart and their de
 
 | Parameter                | Description           | Default           |
 |--------------------------|-----------------------|-------------------|
+| `dash.enabled`           | Switch for the dash   | `true`            |
 | `pachd.image.repository` | Container image name  | `pachyderm/pachd` |
-| `pachd.image.tag`        | Container image tag   | `1.4.8`           |
+| `pachd.image.tag`        | Container image tag   | `1.5.0`           |
 | `pachd.worker.repository`| Worker image name     | `pachyderm/worker`|
-| `pachd.worker.tag`       | Worker image tag      | `1.4.8`           |
+| `pachd.worker.tag`       | Worker image tag      | `1.5.0`           |
 | `pachd.replicaCount`     | Number of pachds      | `1`               |
 | `*.resources.memory`     | Memory request        | `5G`              |
 | `*.resources.cpu`        | CPU request           | `1`               |
