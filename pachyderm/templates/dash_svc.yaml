@@ -3,7 +3,6 @@ kind: Service
 apiVersion: v1
 metadata:
   name: dash
-  namespace: kube-system
   creationTimestamp: 
   labels:
     app: dash

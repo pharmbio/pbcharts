@@ -2,7 +2,6 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: pachd
-  namespace: kube-system
   annotations:
     kubernetes.io/ingress.class: traefik
 spec:
