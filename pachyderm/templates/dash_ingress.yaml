@@ -3,6 +3,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: dash
+  namespace: kube-system
   annotations:
     kubernetes.io/ingress.class: traefik
 spec:
@@ -10,7 +11,6 @@ spec:
   - host: {{ .Values.dash.host }}
     http:
       paths:
-      - path: "/"
         backend:
           serviceName: dash
           servicePort: dash-http
