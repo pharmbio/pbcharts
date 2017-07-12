@@ -10,6 +10,6 @@ spec:
   - host: {{ .Values.pachd.host }}
     http:
       paths:
-        backend:
+      - backend:
           serviceName: pachd
           servicePort: api-grpc-port
