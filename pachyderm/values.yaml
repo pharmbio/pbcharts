@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 pachd:
- host: svc.pachyderm
+ host: sv.pachyderm
  secretName: minio-secret
  replicaCount: 1
  volumes:
@@ -47,7 +47,7 @@ minio:
  secure: "0"
 
 dash:
- host: dash.pachyderm
+ host: sv.dash
  enabled: true
  image:
   tag: 0.3.28
