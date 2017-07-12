@@ -50,7 +50,7 @@ dash:
  host: sv.dash
  enabled: true
  image:
-  tag: 0.3.28
+  tag: 0.3.29
   repository: pachyderm/dash
  proxy:
   tag: 0.3.0
