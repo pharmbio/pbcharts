@@ -47,10 +47,11 @@ minio:
  secure: "0"
 
 dash:
- host: sv.dash
+ httphost: sv.pachdash
+ grpchost: sv.grpc
  enabled: true
  image:
-  tag: 0.3.29
+  tag: 0.3.30
   repository: pachyderm/dash
  proxy:
   tag: 0.3.0
