@@ -14,6 +14,9 @@ spec:
         backend:
           serviceName: dash
           servicePort: dash-http
+  - host: {{ .Values.dash.httphost }}
+    http:
+      paths:
       - path: /
         backend:
           serviceName: dash
