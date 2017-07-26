@@ -12,11 +12,4 @@ spec:
       - path: /
         backend:
           serviceName: pachd
-          servicePort: trace-port
-  - host: {{ .Values.pachd.host }}
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: pachd
-          servicePort: api-grpc-port
+          servicePort: 30650
