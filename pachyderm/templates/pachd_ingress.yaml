@@ -9,6 +9,14 @@ spec:
   - host: {{ .Values.pachd.host }}
     http:
       paths:
-      - backend:
+      - path: /
+        backend:
+          serviceName: pachd
+          servicePort: trace-port
+  - host: {{ .Values.pachd.host }}
+    http:
+      paths:
+      - path: /
+        backend:
           serviceName: pachd
           servicePort: api-grpc-port
