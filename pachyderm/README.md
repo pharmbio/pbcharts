@@ -8,7 +8,7 @@ Prerequisites Details
 
 -	Kubernetes
 -   PV provisioner support in the underlying infrastructure
--   Minio deployment on Kubernetes using Helm
+-   Minio deployment on Kubernetes using Helm: https://github.com/kubernetes/charts/tree/master/stable/minio
 
 How to install the chart
 --------------------
