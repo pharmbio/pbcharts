@@ -44,9 +44,9 @@ Other parameters are also changeable. Please consult all available parameters in
 Clean-up
 -------
 
-In order to remove everything, you can execute the following commands:
+In order to remove Pachyderm, you can execute the following commands:
 
 ```console
 $ helm list
-$ helm delete <release-name>
+$ helm delete <release-name> --purge
 ```
