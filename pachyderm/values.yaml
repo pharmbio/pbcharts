@@ -2,11 +2,11 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 pachd:
- secretName: minio-secret
+ secretName: pachyderm-storage-secret
  replicaCount: 1
  volumes:
   volumeName: pachdvol
-  secVolName: minio-secret
+  secVolName: pachyderm-storage-secret
  resources:
   requests:
    cpu: 1
