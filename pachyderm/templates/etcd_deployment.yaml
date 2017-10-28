@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: etcd
+  creationTimestamp: 
   labels:
     app: etcd
     suite: pachyderm
@@ -15,6 +16,7 @@ spec:
   template:
     metadata:
       name: etcd
+      creationTimestamp: 
       labels:
         app: etcd
         suite: pachyderm
@@ -31,6 +33,7 @@ spec:
           - "--listen-client-urls=http://0.0.0.0:2379"
           - "--advertise-client-urls=http://0.0.0.0:2379"
           - "--data-dir=/var/data/etcd"
+          - "--auto-compaction-retention=1"
           ports:
             - name: client-port
               containerPort: 2379

@@ -29,11 +29,11 @@ The following tables lists the configurable parameters of the chart and their de
 |------------------------------|-----------------------|-------------------|
 | `dash.enabled`               | Switch for the dash   | `true`            |
 | `pachd.image.repository`     | Container image name  | `pachyderm/pachd` |
-| `pachd.image.tag`            | Container image tag   | `1.5.0`           |
+| `pachd.image.tag`            | Container image tag   | `1.6.3`           |
 | `pachd.worker.repository`    | Worker image name     | `pachyderm/worker`|
-| `pachd.worker.tag`           | Worker image tag      | `1.5.0`           |
+| `pachd.worker.tag`           | Worker image tag      | `1.6.3`           |
 | `pachd.replicaCount`         | Number of pachds      | `1`               |
-| `*.resources.requests.memory`| Memory request        | `5G`              |
+| `*.resources.requests.memory`| Memory request        | `2G`              |
 | `*.resources.requests.cpu`   | CPU request           | `1`               |
 | `minio.accessKey`            | Minio access key      | `myaccesskey`     |
 | `minio.secretKey`            | Minio secret key      | `mysecretkey`     |
