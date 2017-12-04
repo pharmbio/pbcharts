@@ -1,26 +1,10 @@
 apiVersion: v1
 entries:
-  pachyderm-gluster:
-  - apiVersion: v1
-    created: 2017-12-04T16:03:25.973369722+01:00
-    description: Pachyderm is a large-scale container-based workflow engine that offers
-      complete version control for data and reproducible data processing
-    digest: 16fce177063c7cfdd0798929e8bbbc5e23de70e5657c0013b8428e3e06db7451
-    home: https://pachyderm.io
-    maintainers:
-    - email: Jon.Novella@farmbio.uu.se
-      name: Jon Ander Novella
-    name: pachyderm-gluster
-    sources:
-    - https://github.com/pachyderm/pachyderm
-    urls:
-    - http://pharmb.io/pbcharts/pachyderm-gluster-0.5.0.tgz
-    version: 0.5.0
   gluster-s3:
   - apiVersion: v1
-    created: 2017-12-04T16:02:07.22059678+01:00
+    created: 2017-12-04T16:35:20.948880991+01:00
     description: S3 object storage interface for GlusterFS
-    digest: 2052d05d7cee56a54bac73c3c726c479c9cc179dc34d673dd06e95b0cd01db4e
+    digest: fa062a0875725e30e3659fbd5900ef8ad20f4b25c6d2a4a51bb47b797d6e4529
     home: https://github.com/gluster/gluster-kubernetes/
     maintainers:
     - email: Jon.Novella@farmbio.uu.se
@@ -29,6 +13,22 @@ entries:
     sources:
     - https://github.com/gluster/gluster-kubernetes/
     urls:
-    - http://pharmb.io/pbcharts/gluster-s3-0.5.0.tgz
-    version: 0.5.0
-generated: 2017-12-04T16:03:25.972738087+01:00
+    - http://pharmb.io/pbcharts/gluster-s3-0.6.0.tgz
+    version: 0.6.0
+  pachyderm-gluster:
+  - apiVersion: v1
+    created: 2017-12-04T16:34:06.463654407+01:00
+    description: Pachyderm is a large-scale container-based workflow engine that offers
+      complete version control for data and reproducible data processing
+    digest: 2da10c0a1b80a7e4ddac8d21f405226d50d831a0564d7b72715cb8d84687aa75
+    home: https://pachyderm.io
+    maintainers:
+    - email: Jon.Novella@farmbio.uu.se
+      name: Jon Ander Novella
+    name: pachyderm-gluster
+    sources:
+    - https://github.com/pachyderm/pachyderm
+    urls:
+    - http://pharmb.io/pbcharts/pachyderm-gluster-0.6.0.tgz
+    version: 0.6.0
+generated: 2017-12-04T16:35:20.948377679+01:00
