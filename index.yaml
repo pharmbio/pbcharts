@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   gluster-s3:
   - apiVersion: v1
-    created: 2017-12-04T15:22:02.666800705+01:00
+    created: 2017-12-04T15:52:40.416881225+01:00
     description: S3 object storage interface for GlusterFS
-    digest: 00f557c56b8febc143c848c1db4db7dbc2314ca72bcfd51cc03a379024c85d01
+    digest: 1123b228bf899247618ce56ef3aeb32545cc02da8c12bdaafe071686731f4806
     home: https://github.com/gluster/gluster-kubernetes/
     maintainers:
     - email: Jon.Novella@farmbio.uu.se
@@ -13,14 +13,14 @@ entries:
     sources:
     - https://github.com/gluster/gluster-kubernetes/
     urls:
-    - http://pharmb.io/pbcharts/gluster-s3-0.2.0.tgz
-    version: 0.2.0
+    - http://pharmb.io/pbcharts/gluster-s3-0.4.0.tgz
+    version: 0.4.0
   pachyderm-gluster:
   - apiVersion: v1
-    created: 2017-12-04T15:21:54.078050112+01:00
+    created: 2017-12-04T15:52:26.273324611+01:00
     description: Pachyderm is a large-scale container-based workflow engine that offers
       complete version control for data and reproducible data processing
-    digest: e92d6d8dde6a841ba071f4d378ad4c38d7678264b005e04ce9f0a204947217a4
+    digest: ab3f0b77315aed3253c25158d3756d77e0c2a9c003749cd2d9a32ed1bc52140d
     home: https://pachyderm.io
     maintainers:
     - email: Jon.Novella@farmbio.uu.se
@@ -29,6 +29,6 @@ entries:
     sources:
     - https://github.com/pachyderm/pachyderm
     urls:
-    - http://pharmb.io/pbcharts/pachyderm-gluster-0.3.0.tgz
-    version: 0.3.0
-generated: 2017-12-04T15:22:02.665848453+01:00
+    - http://pharmb.io/pbcharts/pachyderm-gluster-0.4.0.tgz
+    version: 0.4.0
+generated: 2017-12-04T15:52:40.416310524+01:00
