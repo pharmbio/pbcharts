@@ -1,26 +1,10 @@
 apiVersion: v1
 entries:
-  pachyderm-gluster:
-  - apiVersion: v1
-    created: 2017-12-04T15:04:56.692217909+01:00
-    description: Pachyderm is a large-scale container-based workflow engine that offers
-      complete version control for data and reproducible data processing
-    digest: baa487db1be235270b84638fb0345fb6ac60f20ae3b19de9980078c36d7ae8ea
-    home: https://pachyderm.io
-    maintainers:
-    - email: Jon.Novella@farmbio.uu.se
-      name: Jon Ander Novella
-    name: pachyderm-gluster
-    sources:
-    - https://github.com/pachyderm/pachyderm
-    urls:
-    - http://pharmb.io/pbcharts/pachyderm-gluster-2.tgz
-    version: "2"
   gluster-s3:
   - apiVersion: v1
-    created: 2017-12-04T13:04:47.440652892+01:00
+    created: 2017-12-04T15:22:02.666800705+01:00
     description: S3 object storage interface for GlusterFS
-    digest: 0014a5cecd749ba5c3510f8a862e8f89fdf76085020704280a85d7923482dba3
+    digest: 00f557c56b8febc143c848c1db4db7dbc2314ca72bcfd51cc03a379024c85d01
     home: https://github.com/gluster/gluster-kubernetes/
     maintainers:
     - email: Jon.Novella@farmbio.uu.se
@@ -29,6 +13,22 @@ entries:
     sources:
     - https://github.com/gluster/gluster-kubernetes/
     urls:
-    - http://pharmb.io/pbcharts/gluster-s3-0.1.0.tgz
-    version: 0.1.0
-generated: 2017-12-04T15:04:56.691584922+01:00
+    - http://pharmb.io/pbcharts/gluster-s3-0.2.0.tgz
+    version: 0.2.0
+  pachyderm-gluster:
+  - apiVersion: v1
+    created: 2017-12-04T15:21:54.078050112+01:00
+    description: Pachyderm is a large-scale container-based workflow engine that offers
+      complete version control for data and reproducible data processing
+    digest: e92d6d8dde6a841ba071f4d378ad4c38d7678264b005e04ce9f0a204947217a4
+    home: https://pachyderm.io
+    maintainers:
+    - email: Jon.Novella@farmbio.uu.se
+      name: Jon Ander Novella
+    name: pachyderm-gluster
+    sources:
+    - https://github.com/pachyderm/pachyderm
+    urls:
+    - http://pharmb.io/pbcharts/pachyderm-gluster-0.3.0.tgz
+    version: 0.3.0
+generated: 2017-12-04T15:22:02.665848453+01:00
