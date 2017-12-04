@@ -2,10 +2,10 @@ apiVersion: v1
 entries:
   pachyderm-gluster:
   - apiVersion: v1
-    created: 2017-12-04T13:06:38.254186989+01:00
+    created: 2017-12-04T15:04:56.692217909+01:00
     description: Pachyderm is a large-scale container-based workflow engine that offers
       complete version control for data and reproducible data processing
-    digest: fa944fa78ea5b7c342622934cc8605a5026907e82bd371fff52b8460d88de827
+    digest: baa487db1be235270b84638fb0345fb6ac60f20ae3b19de9980078c36d7ae8ea
     home: https://pachyderm.io
     maintainers:
     - email: Jon.Novella@farmbio.uu.se
@@ -14,8 +14,8 @@ entries:
     sources:
     - https://github.com/pachyderm/pachyderm
     urls:
-    - http://pharmb.io/pbcharts/pachyderm-gluster-1.tgz
-    version: "1"
+    - http://pharmb.io/pbcharts/pachyderm-gluster-2.tgz
+    version: "2"
   gluster-s3:
   - apiVersion: v1
     created: 2017-12-04T13:04:47.440652892+01:00
@@ -31,4 +31,4 @@ entries:
     urls:
     - http://pharmb.io/pbcharts/gluster-s3-0.1.0.tgz
     version: 0.1.0
-generated: 2017-12-04T13:06:38.25353906+01:00
+generated: 2017-12-04T15:04:56.691584922+01:00
