@@ -18,9 +18,9 @@ entries:
     version: 0.8.0
   gluster-s3:
   - apiVersion: v1
-    created: 2017-12-06T13:40:43.609553112+01:00
+    created: 2017-12-07T17:06:10.784152717+01:00
     description: S3 object storage interface for GlusterFS
-    digest: e1a9171f689141dcc8902c89e1981118cdb437a147fc4f053b7153b598c7839b
+    digest: 586c3156ef5d15270f35eaf7ee356717f13550e5ada8bb100e254dbbc2e102a9
     home: https://github.com/gluster/gluster-kubernetes/
     maintainers:
     - email: Jon.Novella@farmbio.uu.se
@@ -29,6 +29,6 @@ entries:
     sources:
     - https://github.com/gluster/gluster-kubernetes/
     urls:
-    - http://pharmb.io/pbcharts/gluster-s3-1.1.0.tgz
-    version: 1.1.0
-generated: 2017-12-06T13:40:43.608915264+01:00
+    - http://pharmb.io/pbcharts/gluster-s3-1.2.0.tgz
+    version: 1.2.0
+generated: 2017-12-07T17:06:10.78345143+01:00
